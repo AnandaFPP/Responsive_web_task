@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+
+    <title>Login</title>
+    <style>
+      .text-regis {
+        text-align: center;
+        padding-top: 1em;
+      }
+      .container,
+      .container-lg,
+      .container-md,
+      .container-sm,
+      .container-xl {
+        max-width: 450px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+      }
+      .nav-pills .nav-link.active,
+      .nav-pills .show > .nav-link {
+        color: #fff;
+        background-color: #c82333;
+      }
+      .nav-pills .nav-link {
+        width: 100px;
+      }
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      a:link,
+      a:visited {
+        text-decoration: none !important;
+        color: white;
+        cursor: pointer !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="../assets/img/logo.png" alt="Logo" />
+      <p class="text-center py-3" style="font-weight: bold">
+        Please sign up with your account
+      </p>
+      <ul
+        class="nav nav-pills mb-3 justify-content-center"
+        id="pills-tab"
+        role="tablist"
+      >
+        <!-- Customer -->
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link active"
+            id="pills-home-tab"
+            data-toggle="pill"
+            data-target="#pills-home"
+            type="button"
+            role="tab"
+            aria-controls="pills-home"
+            aria-selected="true"
+          >
+            Customer
+          </button>
+        </li>
+        <!-- Seller -->
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="pills-seller-tab"
+            data-toggle="pill"
+            data-target="#pills-seller"
+            type="button"
+            role="tab"
+            aria-controls="pills-seller"
+            aria-selected="false"
+          >
+            Seller
+          </button>
+        </li>
+      </ul>
+      <div class="tab-content" id="pills-tabContent" style="margin-top: 35px">
+        <!-- Customer -->
+        <div
+          class="tab-pane fade show active"
+          id="pills-home"
+          role="tabpanel"
+          aria-labelledby="pills-home-tab"
+        >
+          <form>
+            <div class="form-group">
+              <input
+                name=""
+                type="text"
+                class="form-control"
+                placeholder="Email"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                name=""
+                type="text"
+                class="form-control"
+                placeholder="Password"
+              />
+            </div>
+          </form>
+        </div>
+        <!-- Seller -->
+        <div
+          class="tab-pane fade"
+          id="pills-seller"
+          role="tabpanel"
+          aria-labelledby="pills-seller-tab"
+        >
+          <form>
+            <div class="form-group">
+              <input
+                name=""
+                type="text"
+                class="form-control"
+                placeholder="Email"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                name=""
+                type="text"
+                class="form-control"
+                placeholder="Password"
+              />
+            </div>
+          </form>
+        </div>
+        <div class="form-group">
+          <a href="#" class="float-right py-3 text-danger">Forgot password?</a>
+          <button class="btn btn-danger btn-block rounded-pill">
+            <a href="../index.html"> Primary </a>
+          </button>
+          <p class="text-regis">
+            Don't have a Tokopedia account?
+            <a href="/pages/signup.html" class="text-danger"> Register </a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

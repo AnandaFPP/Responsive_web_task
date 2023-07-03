@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+
+    <title>Checkout</title>
+    <style>
+      body {
+        overflow-x: hidden;
+      }
+
+      .input {
+        width: 50vh;
+        border-radius: 20px;
+      }
+
+      .search-logo {
+        position: absolute;
+        margin-top: 10px;
+        margin-left: 367px;
+      }
+
+      .filter-logo {
+        border: 1px #8e8e93 solid;
+        padding: 8px;
+        border-radius: 10px;
+      }
+
+      a:link,
+      a:visited {
+        text-decoration: none !important;
+        color: black;
+        cursor: pointer !important;
+      }
+
+      .cart {
+        font-size: 20px;
+        margin-right: 24px;
+        color: #8e8e93;
+      }
+
+      .bell {
+        font-size: 20px;
+        margin-right: 24px;
+        color: #8e8e93;
+      }
+
+      .message {
+        font-size: 20px;
+        margin-right: 24px;
+        color: #8e8e93;
+      }
+
+      .profile {
+        font-size: 20px;
+        margin-right: 24px;
+        color: #8e8e93;
+      }
+
+      @media only screen and (max-width: 600px) {
+        .squer {
+          display: none;
+        }
+
+        .search-logo {
+          display: none;
+        }
+      }
+
+      @media only screen and (max-width: 1000px) {
+        .search-logo {
+          display: none;
+        }
+
+        .input {
+          width: 100%;
+        }
+
+        .squer {
+          display: none;
+        }
+      }
+
+      .text {
+        color: #8e8e93;
+      }
+
+      .navbar {
+        box-shadow: 0px 6px 40px 20px rgba(173, 173, 173, 0.25);
+      }
+
+      .product {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container">
+            <a href="index.html">
+              <img class="logo mr-4" src="/assets/img/logo.png" alt="logo" />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarScroll"
+              aria-controls="navbarScroll"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+              <ul
+                class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll"
+                style="max-height: 100px"
+              >
+                <li class="nav-item active">
+                  <form class="d-flex">
+                    <input
+                      class="form-control mr-2 input"
+                      type="search "
+                      placeholder="Search"
+                      aria-label="Search"
+                    />
+                    <img
+                      class="search-logo"
+                      src="/assets/img/Search Glyph.png"
+                      alt=""
+                    />
+                  </form>
+                </li>
+                <li class="nav-item squer">
+                  <img
+                    class="filter-logo"
+                    src="/assets/img/filter.jpg"
+                    alt="filter"
+                  />
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0 row justify-content-center">
+                  <a href="/pages/order.html" class="text" style="padding: 0 15px; color: #8e8e93;">
+                    <i class="bi bi-cart2"></i>
+                  </a>
+                  <a href="#" class="text" style="padding: 0 15px; color: #8e8e93;">
+                    <i class="bi bi-bell"></i>
+                  </a>
+                  <a href="#" class="text" style="padding: 0 15px; color: #8e8e93;">
+                    <i class="bi bi-envelope"></i>
+                  </a>
+                  <a href="/pages/login.html" class="text" style="padding: 0 15px; color: #8e8e93;">
+                    <img src="/assets/img/PhotoPf.png" alt="">
+                  </a>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+    <main>
+      <!-- List order -->
+      <section>
+        <div class="container mt-5">
+          <h2 style="font-weight: bold">Checkout</h2>
+          <h6 class="mt-4" style="font-weight: bold">Shipping Address</h6>
+          <div class="row">
+            <div class="col-md-8">
+              <div
+                class="product mt-3"
+                style="
+                  box-shadow: 0px 0px 10px #29292940, 0px 0px 25px #fff;
+                  border-radius: 10px;
+                  padding: 10px 0;
+                "
+              >
+                <div class="col-md-3 mt-3">
+                  <p style="font-size: 20px; font-weight: bold">Andreas Jane</p>
+                </div>
+                <div class="col-md-12">
+                  <p class="teks card-title">
+                    Perumahan Sapphire Mediterania, Wiradadi, Kec. Sokaraja,
+                    Kabupaten Banyumas, Jawa Tengah, 53181 [Tokopedia Note: blok
+                    c 16] Sokaraja, Kab. Banyumas, 53181
+                  </p>
+                </div>
+                <div class="col-md-5 pb-2">
+                  <button class="btn btn-md btn-block" style="border-radius: 20px; background: none; color: #9b9b9b; border-color: #9b9b9b;">
+                    Choose another address
+                  </button>
+                </div>
+              </div>
+              <div
+                class="product row mt-3 ml-0"
+                style="
+                  box-shadow: 0px 0px 10px #29292940, 0px 0px 25px #fff;
+                  padding: 10px 0;
+                  border-radius: 10px;
+                "
+              >
+                <div class="col-md-5 ml-3">
+                  <div class="row">
+                    <img
+                      src="/assets/img/clothmybag.png"
+                      alt="cloth"
+                      style="border-radius: 10px"
+                    />
+                    <div class="text1 ml-3">
+                      <h6>Men's formal suit - Black</h6>
+                      <p class="text">Zalora cloth</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 mt-3">
+                  <div class="items row container">
+                    <img src="/assets/img/quantity.png" alt="" />
+                  </div>
+                </div>
+                <div class="col-md-3 mt-4 ml-3">
+                  <p class="text-dark" style="font-weight: 800px">Rp.250.000</p>
+                </div>
+              </div>
+              <div
+                class="product row mt-3 ml-0"
+                style="
+                  box-shadow: 0px 0px 10px #29292940, 0px 0px 25px #fff;
+                  border-radius: 10px;
+                  padding: 10px 0;
+                "
+              >
+                <div class="col-md-5 ml-3">
+                  <div class="row">
+                    <img
+                      src="/assets/img/kemal-alkan-_BDBEP0ePQc-unsplash 1.png"
+                      alt="cloth"
+                      style="border-radius: 10px"
+                    />
+                    <div class="text1 ml-3">
+                      <h6>Men's Jacket Jeans</h6>
+                      <p class="text">Zalora cloth</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 mt-3">
+                  <div class="items row container">
+                    <img src="/assets/img/quantity.png" alt="" />
+                  </div>
+                </div>
+                <div class="col-md-3 mt-4 ml-3">
+                  <p class="text-dark" style="font-weight: 800px">Rp.250.000</p>
+                </div>
+              </div>
+            </div>
+            <div class="container col-md-4 col-sm-6 mb-5 mt-3">
+              <div
+                class="container product"
+                style="
+                  box-shadow: 0px 0px 10px #29292940, 0px 0px 25px #fff;
+                  padding: 10px;
+                  border-radius: 5px;
+                "
+              >
+                <h4>Shopping summary</h4>
+                <div class="row mt-4 prices">
+                  <p class="col-md-8 col-sm-1" style="color: #9b9b9b">Order</p>
+                  <p
+                    class="col-md-3 col-sm-2 text-dark"
+                    style="font-weight: 800"
+                  >
+                    Rp.500.000
+                  </p>
+                  <p class="col-md-8 col-sm-1" style="color: #9b9b9b">
+                    Delivery
+                  </p>
+                  <p
+                    class="col-md-3 col-sm-2 text-dark"
+                    style="font-weight: 800"
+                  >
+                    Rp.45.000
+                  </p>
+                  <hr />
+                  <p class="col-md-8 col-sm-1" style="color: black; font-weight: bold;">
+                    Shopping Summary
+                  </p>
+                  <p
+                    class="col-md-3 col-sm-2 text-danger"
+                    style="font-weight: bold"
+                  >
+                    Rp.545.000
+                  </p>
+                </div>
+                <button class="btn btn-danger btn-lg btn-block" style="border-radius: 25px;">Select payment</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

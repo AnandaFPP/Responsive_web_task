@@ -1,0 +1,70 @@
+@font-face {
+  font-family: "Metropolis";
+  src: url(/assets/font/metropolis.regular.otf);
+}
+
+body {
+    font-family: "Metropolis";
+    overflow-x: hidden;
+  }
+
+  .input {
+    width: 50vh;
+    border-radius: 20px;
+  }
+
+  .search-logo {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 367px;
+  }
+
+  .filter-logo {
+    border: 1px #8e8e93 solid;
+    padding: 8px;
+    border-radius: 10px;
+  }
+
+  a:link,
+  a:visited {
+    text-decoration: none !important;
+    color: black;
+    cursor: pointer !important;
+  }
+
+  .cart {
+    font-size: 20px;
+    margin-right: 24px;
+    color: #8e8e93;
+  }
+
+  .bell {
+    font-size: 20px;
+    margin-right: 24px;
+    color: #8e8e93;
+  }
+
+  .message {
+    font-size: 20px;
+    margin-right: 24px;
+    color: #8e8e93;
+  }
+
+  .profile {
+    font-size: 20px;
+    margin-right: 24px;
+    color: #8e8e93;
+  }
+
+  .input {
+    width: 50vh;
+    border-radius: 20px;
+  }
+
+  .price {
+    font-size: 30px;
+    margin-top: -20px;
+    font-weight: bold;
+    color: black;
+  }
+

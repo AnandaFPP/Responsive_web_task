@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+
+    <title>Detail product</title>
+
+    <style>
+      body {
+        overflow-x: hidden;
+      }
+
+      .rounded-pill {
+        width: 100px;
+      }
+
+      .container {
+        margin-top: 5px;
+      }
+
+      p {
+        color: #9b9b9b;
+      }
+
+      .input {
+        width: 50vh;
+        border-radius: 20px;
+        /* position: relative; */
+      }
+
+      @media only screen and (max-width: 600px) {
+        .search-logo {
+          display: none;
+        }
+
+        .squer {
+          display: none;
+        }
+      }
+
+      @media only screen and (max-width: 1200px) {
+        .container {
+          display: block;
+        }
+
+        .rows {
+          display: none;
+        }
+
+        .squer {
+          display: none;
+        }
+      }
+
+      a:link,
+      a:visited {
+        text-decoration: none !important;
+        color: black;
+        cursor: pointer !important;
+      }
+
+      .search-logo {
+        position: absolute;
+        padding-top: 10px;
+        padding-left: 368px;
+      }
+
+      .filter-logo {
+        border: 1px #8e8e93 solid;
+        padding: 8px;
+        border-radius: 10px;
+      }
+
+      .small-img-group {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .small-img-col {
+        flex-basis: 24%;
+      }
+
+      .container img {
+        margin: 2px;
+        /* border-radius: 5px; */
+      }
+
+      button {
+        padding: 10px 20px;
+      }
+
+      .navbar {
+        box-shadow: 0px 6px 40px 20px rgba(173, 173, 173, 0.25);
+      }
+
+      .hr {
+        font-weight: bold;
+      }
+
+      .product {
+        box-shadow: 0px 0px 10px #29292940, 0px 0px 25px #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <a href="index.html">
+            <img class="logo mr-4" src="/assets/img/logo.png" alt="logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarScroll"
+            aria-controls="navbarScroll"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul
+              class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll"
+              style="max-height: 100px"
+            >
+              <li class="nav-item active">
+                <form class="d-flex">
+                  <input
+                    class="form-control mr-2 input"
+                    type="search "
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                  <img
+                    class="search-logo"
+                    src="/assets/img/Search Glyph.png"
+                    alt=""
+                  />
+                </form>
+              </li>
+              <li class="nav-item squer">
+                <img
+                  class="filter-logo"
+                  src="/assets/img/filter.jpg"
+                  alt="filter"
+                />
+              </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0 row justify-content-center">
+              <a href="/pages/order.html">
+                <img
+                  class="mr-5"
+                  src="/assets/img/shopping-cart.png"
+                  alt="cart"
+                />
+              </a>
+              <button class="btn btn-danger rounded-pill mr-3">
+                <a href="/pages/login.html" class="text-light">Login</a>
+              </button>
+              <button class="btn border rounded-pill mr">
+                <a href="/pages/signup.html" class="text-secondary">Signup</a>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- End Navbar -->
+    <!-- Content -->
+    <main>
+      <section class="container mt-5">
+        <p>Home > category > t-shirt</p>
+        <div class="row">
+          <div class="col-md-4 col-sm-6 col-12 mt-3">
+            <img
+              class="img-fluid w-100 pb-2"
+              src="/assets/img/bajumuslimpria1.png"
+              alt="product1"
+              style="border-radius: 15px;"
+            />
+            <div class="small-img-group">
+              <div class="small-img-col">
+                <img src="/assets/img/smallimg1.png" class="small-img" alt="" style="border-radius: 5px;"/>
+              </div>
+              <div class="small-img-col">
+                <img src="/assets/img/smallimg2.png" class="small-img" alt="" style="border-radius: 5px;"/>
+              </div>
+              <div class="small-img-col">
+                <img src="/assets/img/smallimg3.png" class="small-img" alt="" style="border-radius: 5px;"/>
+              </div>
+              <div class="small-img-col">
+                <img src="/assets/img/smallimg4.png" class="small-img" alt="" style="border-radius: 5px;"/>
+              </div>
+              <div class="small-img-col">
+                <img src="/assets/img/smallimg5.png" class="small-img" alt="" style="border-radius: 5px;"/>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8 mt-3">
+            <h2 style="font-weight: bold">Baju muslim pria</h2>
+            <p>Zalora cloth</p>
+            <img src="/assets/img/rating.png" alt="rating" class="mb-3" />
+            <h5>Price</h5>
+            <p class="price mt-1">Rp. 150.000</p>
+            <h5>Color</h5>
+            <div class="container row">
+              <img src="/assets/img/Ellipse 5.png" alt="" />
+              <img src="/assets/img/Ellipse 6.png" alt="" />
+              <img src="/assets/img/Ellipse 7.png" alt="" />
+              <img src="/assets/img/Ellipse 8.png" alt="" />
+            </div>
+            <div class="row mt-3">
+              <div class="ml-3">
+                <h5>Size</h5>
+                <img src="/assets/img/quantity.png" alt="" />
+              </div>
+              <div class="ml-3">
+                <h5>Jumlah</h5>
+                <img src="/assets/img/quantity.png" alt="" />
+              </div>
+            </div>
+            <div class="row ml-3 mt-3">
+              <button class="btn border-dark rounded-pill mr-3">
+                <a href="#">Chat</a>
+              </button>
+              <button class="btn border-dark rounded-pill mr-3">
+                <a href="#">Add bag</a>
+              </button>
+              <button class="btn btn-danger rounded-pill mr-3">
+                <a href="#" class="text-light">Buy Now</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="mt-3">
+        <div class="container">
+          <h3>Informasi Produk</h3>
+          <div class="text mt-5">
+            <h4>Condition</h4>
+            <h5 class="text-danger font-weight-bold">New</h5>
+          </div>
+          <div class="desc mt-5 text-justify">
+            <h4>Description</h4>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et
+              debitis architecto accusamus dolor illo nesciunt maiores, porro
+              facilis quasi incidunt voluptates eligendi. Sed quaerat saepe
+              commodi inventore temporibus explicabo necessitatibus?
+            </p>
+            <p>
+              Adipisci, praesentium omnis beatae maiores incidunt aperiam,
+              labore possimus non fugiat vero quo aut natus? Cupiditate
+              distinctio assumenda doloremque ex laborum iste beatae temporibus,
+              quos odit unde quibusdam nulla eos.
+            </p>
+            <p>
+              Quia fuga accusantium, quidem delectus dicta suscipit assumenda
+              corporis magni! Sint nostrum aperiam deleniti reprehenderit
+              perferendis quidem fugiat accusantium, nesciunt quis eius
+              architecto fuga laudantium vel ab, voluptates asperiores eaque!
+            </p>
+            <p>
+              Sapiente quis accusamus cupiditate dolor distinctio nisi ipsam
+              nesciunt ipsa animi praesentium, nostrum officiis repellendus eos
+              unde officia cum dicta fugiat rerum? Reiciendis, totam quod
+              incidunt fuga voluptatibus beatae cupiditate!
+            </p>
+          </div>
+          <h3 class="">Product review</h3>
+          <div class="container row rating-star">
+            <div class="col-md-2 col-sm-1">
+              <div class="row">
+                <p
+                  class="rating font-weight-bold"
+                  style="font-size: 50px; color: black"
+                >
+                  5.0<span class="rating text-secondary" style="font-size: 20px"
+                    >/5</span
+                  >
+                </p>
+              </div>
+              <div class="img-rating">
+                <img src="/assets/img/rating.png" alt="rating" />
+              </div>
+            </div>
+            <div class="row col-3 rows">
+              <div class="star col-1">
+                <img src="/assets/img/Star.png" alt="" />
+                <img src="/assets/img/Star.png" alt="" />
+                <img src="/assets/img/Star.png" alt="" />
+                <img src="/assets/img/Star.png" alt="" />
+                <img src="/assets/img/Star.png" alt="" />
+              </div>
+              <div class="rating col-1">
+                <span>5</span>
+                <span>4</span>
+                <span>3</span>
+                <span>2</span>
+                <span>1</span>
+              </div>
+              <div
+                style="
+                  height: 8px;
+                  width: 120px;
+                  border-radius: 20px;
+                  background-color: #8e8e93;
+                  margin-top: 7px;
+                  margin-left: 10px;
+                "
+              ></div>
+              <div class="rating col-1">
+                <span>4</span>
+                <span>0</span>
+                <span>0</span>
+                <span>0</span>
+                <span>0</span>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <section>
+            <div class="container mt-4">
+              <h2 style="font-weight: bold">You can also like this</h2>
+              <p class="">You've never seen before!</p>
+              <div class="row">
+                <div class="col-md-3 col-sm-6 mb-5">
+                  <div class="product" style="padding: 0">
+                    <img
+                      class="w-100"
+                      src="/assets/img/clothes.png"
+                      alt="cloth"
+                      style="margin-left: 0px; margin-top: -1px"
+                    />
+                    <div class="p-2">
+                      <h5 class="card-title">
+                        Men's formal suit - Black & White
+                      </h5>
+                      <h5 class="text-danger">Rp.250.000</h5>
+                      <img src="/assets/img/rating.png" alt="rating" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-5">
+                  <div class="border rounded product">
+                    <img
+                      class="w-100"
+                      src="/assets/img/clothes.png"
+                      alt="cloth"
+                      style="margin-left: 0px; margin-top: -1px"
+                    />
+                    <div class="p-2">
+                      <h5 class="card-title">
+                        Men's formal suit - Black & White
+                      </h5>
+                      <h5 class="text-danger">Rp.250.000</h5>
+                      <img src="/assets/img/rating.png" alt="rating" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-5">
+                  <div class="border rounded product">
+                    <img
+                      class="w-100"
+                      src="/assets/img/clothes.png"
+                      alt="cloth"
+                      style="margin-left: 0px; margin-top: -1px"
+                    />
+                    <div class="p-2">
+                      <h5 class="card-title">
+                        Men's formal suit - Black & White
+                      </h5>
+                      <h5 class="text-danger">Rp.250.000</h5>
+                      <img src="/assets/img/rating.png" alt="rating" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-5">
+                  <div class="border rounded product">
+                    <img
+                      class="w-100"
+                      src="/assets/img/clothes.png"
+                      alt="cloth"
+                      style="margin-left: 0px; margin-top: -1px"
+                    />
+                    <div class="p-2">
+                      <h5 class="card-title">
+                        Men's formal suit - Black & White
+                      </h5>
+                      <h5 class="text-danger">Rp.250.000</h5>
+                      <img src="/assets/img/rating.png" alt="stars" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-5">
+                  <div class="border rounded product">
+                    <img
+                      class="w-100"
+                      src="/assets/img/clothes.png"
+                      alt="cloth"
+                      style="margin-left: 0px; margin-top: -1px"
+                    />
+                    <div class="p-2">
+                      <h5 class="card-title">
+                        Men's formal suit - Black & White
+                      </h5>
+                      <h5 class="text-danger">Rp.250.000</h5>
+                      <img src="/assets/img/rating.png" alt="stars" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-5">
+                  <div class="border rounded product">
+                    <img
+                      class="w-100"
+                      src="/assets/img/clothes.png"
+                      alt="cloth"
+                      style="margin-left: 0px; margin-top: -1px"
+                    />
+                    <div class="p-2">
+                      <h5 class="card-title">
+                        Men's formal suit - Black & White
+                      </h5>
+                      <h5 class="text-danger">Rp.250.000</h5>
+                      <img src="/assets/img/rating.png" alt="stars" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-5">
+                  <div class="border rounded product">
+                    <img
+                      class="w-100"
+                      src="/assets/img/clothes.png"
+                      alt="cloth"
+                      style="margin-left: 0px; margin-top: -1px"
+                    />
+                    <div class="p-2">
+                      <h5 class="card-title">
+                        Men's formal suit - Black & White
+                      </h5>
+                      <h5 class="text-danger">Rp.250.000</h5>
+                      <img src="/assets/img/rating.png" alt="stars" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-5">
+                  <div class="border rounded product">
+                    <img
+                      class="w-100"
+                      src="/assets/img/clothes.png"
+                      alt="cloth"
+                      style="margin-left: 0px; margin-top: -1px"
+                    />
+                    <div class="p-2">
+                      <h5 class="card-title">
+                        Men's formal suit - Black & White
+                      </h5>
+                      <h5 class="text-danger">Rp.250.000</h5>
+                      <img src="/assets/img/rating.png" alt="stars" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+    <!-- End Content -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
